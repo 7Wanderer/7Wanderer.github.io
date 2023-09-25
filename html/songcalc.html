@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Shed Dust</title>
+	<meta name="author" content="Nahyan Khan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./../css/styles.css">
+	<style>		
+	</style>
+</head>
+<body>
+<div id="">
+<div></div>
+<div><nav></nav></div>
+<div><main>
+	<h2>calculate time signature</h2>
+	<form id="calctime" name="calctime">
+		<label for="mylength">Time signature? </label>
+		<input type="text" id="mysig" name="mysig" required>
+		<label for="mylength">BPM? </label>
+		<input type="text" id="mybpm" name="mybpm" required>
+		<label for="mylength">Number of bars?</label>
+		<input type="text" id="mybars" name="mybars" required>
+	</form>
+	<script>
+	'use strict';
+		let answer = function(a,b,c) {
+			(c * a) / b;
+		}
+		document.write(answer(mysig,mybpm,mybars))
+	</script>
+</main></div>
+<div></div>
+<div><footer></footer></div>
+</div>
+</body>
+</html>

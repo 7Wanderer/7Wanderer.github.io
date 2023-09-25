@@ -1,0 +1,9 @@
+main {
+	font-size:2em;
+	display:grid;
+	float: right;
+	background-color:transparent;
+}
+img {
+	max-width:300px;
+}

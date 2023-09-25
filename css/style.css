@@ -1,0 +1,32 @@
+body {	
+	font-family: arial, sans-serif;
+	background-image: url('./../images/background.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.headclass { grid-area: header; }
+.navclass { grid-area: menu; }
+.mainclass { grid-area: main; }
+.blankclass { grid-area: blankclass; }
+.picsclass { grid-area: pictures; }
+.footerclass { grid-area: footer; }
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+    'blankclass header pictures'
+    'blankclass main pictures'
+    'blankclass footer pictures'; /* Statement taken from W3Schools */
+	gap: 10px;
+	padding: 10px;
+}
+
+.grid-container > div {
+	background-color: rgba(255, 255, 255, 0.25);
+	text-align: center;
+	padding: 10px 0;
+	font-size: 1em;
+	min-width:480px;
+}

@@ -1,0 +1,94 @@
+:root {
+	--textmain: #EEEEEE;
+	--bgmain: #111111;
+}
+
+body {	
+	font-family: arial, sans-serif;
+	background-image: url('./../images/CoPlandscape.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 25px;
+}
+#container>div {
+	padding: 2%;
+	color: whitesmoke;
+}
+.type1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+header h1 {
+  margin-left: 70%;
+  margin-right: auto;
+}
+
+nav {
+	padding: 0.5em 3%;
+	background-color: black;
+	color: var(--textmain);
+	font-size: 2em;
+	margin-bottom: 4%;
+	display: flex;
+	position:fixed;
+}
+
+
+nav ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+nav ul li {
+  padding-right: 5%;
+}
+
+nav a {
+  text-decoration: none;
+  outline: none;
+}
+
+nav a:link { color: var(--textmain); }
+
+nav a:visited { color: var(--textmain); }
+
+nav a:hover { 
+  color: red;
+}
+
+main {
+	width:636px;
+	font-size:16px;
+	color:var(--textmain);
+	background-color:var(--bgmain);
+	text-align:left;
+}
+
+footer {
+	width:636px;
+	font-size:12px;
+	color:var(--textmain);
+	background-color:var(--bgmain);
+	text-align:center;
+}
+
+.meta{
+	color:var(--textmain);
+	background:#222222;
+	text-align:left;
+	font-weight:bold;
+	margin-bottom:1em;
+}

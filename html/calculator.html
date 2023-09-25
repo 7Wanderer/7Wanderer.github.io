@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Shed Dust</title>
+	<meta name="author" content="Nahyan Khan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./../css/styles.css">
+	<style>
+	body {
+		font-size:20px;
+	}
+	</style> 
+</head>
+
+<body>
+<div id="container">
+
+<div class="type1"><header>
+		<img src="./../images/logo.png">
+</header></div>
+
+<div><nav>
+		<ul>
+			<li><a href="index2.html">Home</a></li>
+			<li><a href="sheddust2.html">Members</a></li>
+			<li><a href="discogs2.html">Discography</a></li>
+			<li><a href="about2.html">About</a></li>
+			<li><a href="store.html">Store</a></li>
+		</ul>
+		<ul>
+			<li><a href="https://www.sheddust.bandcamp.com">Bandcamp</a></li>			
+			<li><a href="https://www.youtube.com/channel/UCO0zyyaF9HO1GEsk5pYrwUA">YouTube</a></li>
+		</ul>
+</nav></div>
+
+<div><main>
+	<form>
+		<label for="timeSig">Time signature: </label><br>
+		<input type="number" id="numTop" name="timeSig"><br>
+		<select id="numBot">
+			<option value="2">2</option>
+			<option value="4" selected>4</option>
+			<option value="8">8</option>
+			<option value="16">16</option>
+			<option value="32">32</option>
+		</select><br>
+		<label for="barCount"># of bars: </label><br>
+		<input type="number" id="myBars" name="barCount"><br>
+		<label for="BPM">BPM: </label><br>
+		<input type="number" id="myBPM" name="BPM"><br>
+		<button type="button" onclick="calculate()">Calculate</button> 
+		<button type="button" onclick="storeTime()">Store</button> 
+	</form>
+	<p id="songLength"></p>
+	<p id="totalTime"></p>
+	<p id="storedTimes"></p>
+	<script>
+	let answer;
+	function calculate() {
+		"use strict";
+		let var1, var2, timeSig, barCount, BPM;
+		
+		var1 = document.getElementById("numTop").value;
+		var2 = document.getElementById("numBot").value;
+		timeSig = var1 / parseInt(var2);
+		barCount = document.getElementById("myBars").value;
+		BPM = document.getElementById("myBPM").value;
+		answer = (timeSig * barCount * 4) / BPM * 60;
+		document.getElementById("songLength").innerHTML = ("<p>Length = "+answer+" seconds<br>= "+Math.floor(answer/60)+" minutes and "+answer%60+" seconds</p>");
+	}
+	const timeArray = [];
+	function storeTime() {
+		"use strict";
+		let var4 = 0;
+		timeArray.push(answer);
+		let text = "<p>";
+		timeArray.forEach(myFunction);
+		text += "</p>";
+		function myFunction(value) {
+			text += "Stored: " +value+" seconds<br>";
+			var4 += value;
+		}
+		document.getElementById("totalTime").innerHTML = "Total seconds: "+var4+"<br>= "+Math.floor(var4/60)+" minutes and "+var4%60+" seconds</p>";
+		document.getElementById("storedTimes").innerHTML = text;
+	}
+	</script>
+</main>
+<footer> 
+	<p>&copy; Shed Dust UK, 2022 (we aren't actually copyrighted)</p>
+</footer>
+</div>
+
+</div>
+</body>
+</html>
