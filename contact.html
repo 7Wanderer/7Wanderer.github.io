@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Nahyan Khan</title>
+	<meta name="author" content="Nahyan Khan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/styles2.css">
+	<style>
+		main {
+			background-color: rgba(240,255,240,0.25);
+			color: black;
+			font-weight:bold;
+		}	
+	</style> <!-- This makes the text easier to read while visually separating the form from the rest of the site.-->
+</head>
+<body>
+<div class="grid-container"> <!-- This grid contains all the content of the site.-->
+	<div class="blankclass"></div>
+	<div class="blankclass2"></div>
+	<div class="headclass"><h1>Contact</h1></div>
+	<div class="navclass">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="degree.html">Degree</a></li>
+				<li><a href="sga.html">SGA</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="mainclass">
+		<main>		
+		  <table id="aboutustable">
+    <tr><td>Personal Email:</td><td>KhaNahyan.022@gmail.com</td></tr>
+    <tr><td>Student Email:</td><td>nkhan10@sheffield.ac.uk</td></tr>	
+    <tr><td>Mobile: </td><td>+44 7961 978567</td></tr>
+    <tr><td>Address: </td><td>3 King George's Way</td></tr>
+    <tr><td></td><td>Whitwell</td></tr>
+    <tr><td></td><td>SG4 8BA</td></tr>
+  </table>
+  
+  <!-- don't forget to change 'replace_this' for your email address -->
+  <form name="myform" action="mailto:nkhan10@sheffield.ac.uk?subject=Test Email" 
+       enctype="text/plain" method="post">
+
+    <p>
+    <label for="name">Your name:</label>
+    <input type="text" name="name" id="name" placeholder="type your name"
+        maxlength="40" size="20" required>
+    </p>
+    <p>
+    <label for="email">Your e-mail:</label>
+    <input type="email" name="email" id="email" placeholder="type your email address"
+        maxlength="40" size="20" required>
+    </p>
+	<h6>Your email will be sent to my Student Email address.</h6>
+    <p>
+	<textarea name="comment" rows="5" cols="50" style="resize: none;">Type your email here</textarea>
+    </p>
+    <p>
+    <input type="submit" name="submit" id="submit" value="Submit">
+    <input type="reset">
+    </p>
+
+  </form>
+		</main>
+	</div>  
+	<div class="picsclass">
+	</div>
+  
+  <div class="footerclass">
+	  <footer> 
+			<ul>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="access.html">Accessibility</a></li>
+				<li><a href="legal.html">Legal & Security</a></li>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="testing.html">Testing</a></li>
+			</ul>
+			<p>&copy; Nahyan Khan, 2022</p>
+		</footer>
+	</div>
+</div>
+
+</body>
+</html>

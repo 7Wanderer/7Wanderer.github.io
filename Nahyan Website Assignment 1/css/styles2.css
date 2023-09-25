@@ -1,0 +1,144 @@
+:root{
+	--maintext: rgb(255,255,255);
+	--mainbg: rgba(255, 255, 255, 0.1);
+}
+
+body {	
+	font-family: arial, sans-serif;
+	color: var(--maintext);
+	background-image: url('./../images/background.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.headclass { grid-area: header; }
+.navclass { grid-area: menu; }
+.blankclass { grid-area: blank; }
+.blankclass2 { grid-area: blank2; }
+.mainclass { grid-area: main; }
+.picsclass { grid-area: pictures; }
+.footerclass { grid-area: footer; }
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+    'blank header blank2'
+	'blank menu blank2'
+    'pictures main blank2'
+    'pictures footer blank2'; /* Statement taken from W3Schools. Tested to work on all modern browsers, including Firefox, Chrome, and Chromium. IE not supported. */
+	gap: 10px;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 960px) {/* If the device width is 960px or less, the grid will be rearranged to be a vertical line of grid items,
+											hence everything will be displayed in an easy to read format, no matter the device width. */
+  .grid-container { 
+	display: grid;
+	grid-template-areas:
+    'header'
+	'menu'
+    'main'
+    'pictures'
+	'footer';
+	gap: 10px;
+	padding: 10px;
+ }
+}
+
+.grid-container > div {
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	padding: 10px 0;
+	font-size: 1em;
+	min-width:480px;
+	min-height:90px;
+}
+
+img { width:450px;}
+h1 { font-size:48px;}
+h2 {
+	margin: 0 auto;
+	text-align: center;
+	text-decoration:underline;
+}
+h3 {
+	margin: 0 auto;
+	text-align: center;
+	text-decoration:underline;
+}
+h4 {
+	text-decoration:underline;
+}
+
+nav {
+  margin: 0;
+  padding: 5px 5%;
+  font-size: 1.1em;
+}
+
+nav ul {  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  padding-right: 5%;
+	font-size: 1.3em;
+}
+
+nav a {
+  text-decoration: none;
+  outline: none;
+}
+
+nav a:link { color: var(--maintext); }
+
+nav a:visited { color: var(--maintext); }
+
+nav a:hover { 
+  color: red;
+}
+main {
+	background-color: var(--mainbg);
+	font-size:24px;
+	text-align:left;
+	color: var(--maintext);
+}
+
+main a:hover { 
+  color: red;
+}
+
+footer {
+	background-color: var(--mainbg);
+  margin: 0;
+  padding: 5px 5%;
+  font-size: 1em;
+}
+
+footer ul {  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  padding-right: 5%;
+}
+
+footer a {
+  text-decoration: none;
+  outline: none;
+}
+
+footer a:link { color: var(--maintext); }
+
+footer a:visited { color: var(--maintext); }
+
+footer a:hover { 
+  color: red;
+}

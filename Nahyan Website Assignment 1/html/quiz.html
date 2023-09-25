@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Nahyan Khan</title>
+	<meta name="author" content="Nahyan Khan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./../css/styles.css">
+	<style>
+		img { width: 220px; }
+		.hiddn { <!--This will hide the div with the .hiddn (hidden) class, until...-->
+			display: none;
+		}
+
+		h3:hover div { <!--This displays the div inside of the h3 block.-->
+			display: block;
+		}
+	</style>
+</head>
+<body>
+<div class="grid-container"> <!-- This grid contains all the content of the site.-->
+	<div class="blankclass"></div>
+	<div class="blankclass2"></div>
+	<div class="headclass">
+		<h1>Quiz</h1>
+		<h2>Hover over the question to see the answer!</h2>
+	</div>
+	<div class="navclass">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="degree.html">Degree</a></li>
+				<li><a href="sga.html">SGA</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="mainclass">
+		<main>				
+			<p> The first question corresponds to the first picture, and so on.
+			<h3><br>What is the name of the game depicted?<div class="hiddn"><br>Pokemon Mystery Dungeon: Explorers of Sky</div></h3><br>
+			<h3><br><br><div style="font-size:24px">What subgenre of jungle is categorised by fast, technical breakbeats?</div><div class="hiddn"><br>Breakcore/IDM</div></h3><br>
+			<h3><br><br><br>What is the name of Lotus Cars' only ICE (Internal Combustion Engine) supercar?<div class="hiddn"><br>Lotus Exige Cup 430</div></h3><br><br>
+		</main>
+	</div>  
+	<div class="picsclass"><!-- Contains all the images, which are contained in a different directory (hence the ./../ prefix, in order for the file tree to be backtracked.-->
+		<img src="./../images/PMD-Sky.jpg"><br>
+		<img src="./../images/goreshit-semantics.jpg"><br>
+		<img src="./../images/Exige.jpg">
+	</div>
+  
+  <div class="footerclass">
+	  <footer> 
+			<ul>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="access.html">Accessibility</a></li>
+				<li><a href="legal.html">Legal & Security</a></li>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="testing.html">Testing</a></li>
+			</ul>
+			<p>&copy; Nahyan Khan, 2022</p>
+		</footer>
+	</div>
+</div>
+
+</body>
+</html>
