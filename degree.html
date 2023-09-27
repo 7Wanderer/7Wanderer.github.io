@@ -8,19 +8,13 @@
 	<link rel="stylesheet" href="./css/styles2.css">
 	<style>
 		img { width: 360px; }
+		
 		.dropdown {
 		  position: relative;
-		  display: inline-block;
 		}
 
 		.dropdown-content {
 		  display: none;
-		  position: absolute;
-		  background-color: #f9f9f9;
-		  min-width: 160px;
-		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		  padding: 12px 16px;
-		  z-index: 1;
 		}
 
 		.dropdown:hover .dropdown-content {
@@ -46,26 +40,42 @@
 	<div class="mainclass">
 		<main>		
 			<h2>G600 Computer Science (Software Engineering) BEng</h2>	 <br>
-			<h3>Year 1</h3>
-			<h4>COM1001 - Introduction to Software Engineering</h4>
-			<p>Introduces software engineering, and the concept of developing software which can meet basic functional criteria.</p>
-			<h4>COM1002 - Foundations of Computer Science</h4>
-			<p>Teaches mathematical concepts that are essential for computing. It is the foundation for every other computing module.</p>
-			<h4>COM1003 - Java Programming</h4>
-			<p>Introduces and teaches programming in the Java language, a high level, general purpose OOP language.</p>
-			<h4>COM1005 - Machines and Intelligence</h4>
-			<p>Introduces artificial intelligence, outlining its usage, history and key concepts and problems in the field of AI.</p>
-			<h4>COM1006 - Devices and Networks</h4>
-			<p>Teaches the fundamental aspects of technology - computer architecture, digital logic and arithmetic.</p>
-			<h4>COM1008 - Web and Internet Technology</h4>
-			<p>Teaches front-end web development in HTML, CSS and JavaScript, as well as legal requirements for websites.</p>
+			<div class="dropdown">
+				<span><h3>Year 1 (hover for details)</h3></span>
+				<div class="dropdown-content">
+					<h4>COM1001 : Introduction to Software Engineering</h4>
+					<p>Introduces software engineering, and the concept of developing software which can meet basic functional criteria.</p>
+					<h4>COM1002 : Foundations of Computer Science</h4>
+					<p>Teaches mathematical concepts that are essential for computing. It is the foundation for every other computing module.</p>
+					<h4>COM1003 : Java Programming</h4>
+					<p>Introduces and teaches programming in the Java language, a high level, general purpose OOP language.</p>
+					<h4>COM1005 : Machines and Intelligence</h4>
+					<p>Introduces artificial intelligence, outlining its usage, history and key concepts and problems in the field of AI.</p>
+					<h4>COM1006 : Devices and Networks</h4>
+					<p>Teaches the fundamental aspects of technology - computer architecture, digital logic and arithmetic.</p>
+					<h4>COM1008 : Web and Internet Technology</h4>
+					<p>Teaches front-end web development in HTML, CSS and JavaScript, as well as legal requirements for websites.</p>
+					<h4>COM1009 : Algorithms and Data Structures</h4>
+					<p>An introduction to the design and analysis of algorithms, data structures, and their efficiency.</p>
+				</div>
+			</div>
+			<div class="dropdown">
+				<span><h3>Year 2 (hover for details)</h3></span>
+				<div class="dropdown-content">
+					<h4>COM2004-3004 : Data Driven Computing</h4>
+					<h4>COM2008 : Systems Design and Security</h4>
+					<h4>COM2009 : Robotics</h4>
+					<h4>COM2107 : Logic in Computer Science</h4>
+					<h4>COM2108 : Functional Programming</h4>
+					<h4>COM2109 : Automata, Computation and Complexity</h4>
+					<h4>COM3420 : Software Hut</h4>
+				</div>
+			</div>
 		</main>
 	</div>  
 	<div class="picsclass">	<!-- Contains all the images, which are contained in a different directory (hence the ./../ prefix, in order for the file tree to be backtracked.-->
 		<img src="./images/images/java.jpg">
 		<img src="./images/images/binary.jpg">
-		<img src="./images/images/AI.png">
-		<img src="./images/images/webdev.png">
 	</div>
   
   <div class="footerclass">
