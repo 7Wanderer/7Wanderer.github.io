@@ -94,11 +94,11 @@ nav a {
   outline: none;
 }
 
-nav a:link { color: var(--maintext); }
+a:link { color: var(--maintext); }
 
-nav a:visited { color: var(--maintext); }
+a:visited { color: var(--maintext); }
 
-nav a:hover { 
+a:hover { 
   color: red;
 }
 main {
@@ -108,6 +108,9 @@ main {
 	color: var(--maintext);
 }
 
+main a:link { 
+  color: cornflowerblue;
+}
 main a:hover { 
   color: red;
 }
